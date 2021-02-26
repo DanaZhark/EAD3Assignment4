@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--<bean id="customer1" class="ead3.assignment3.Customer">-->
+        <!--<property name="first_name" value="Zhanar"></property>-->
+        <!--<property name="last_name" value="Sirgebayeva"></property>-->
+        <!--<property name="membership" value="Premium"></property>-->
+    <!--</bean>-->
+    <!--<bean id="customer2" class="ead3.assignment3.Customer">-->
+        <!--<property name="first_name" value="Togzhan"></property>-->
+        <!--<property name="last_name" value="Kudaibergen"></property>-->
+        <!--<property name="membership" value="Gold"></property>-->
+    <!--</bean>-->
+    <!--<bean id="customer3" class="ead3.assignment3.Customer">-->
+        <!--<property name="first_name" value="Irina"></property>-->
+        <!--<property name="last_name" value="Kir"></property>-->
+        <!--<property name="membership" value="Silver"></property>-->
+    <!--</bean>-->
+    <!--<bean id="customer4" class="ead3.assignment3.Customer">-->
+        <!--<property name="first_name" value="Dana"></property>-->
+        <!--<property name="last_name" value="Zharkimbayeva"></property>-->
+        <!--<property name="membership" value=""></property>-->
+    <!--</bean>-->
+
+
+    <bean id="service1" class="ead3.assignment3.Services">
+        <property name="id" value="1"></property>
+        <property name="name" value="Wash and Cut"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+    <bean id="service2" class="ead3.assignment3.Services">
+        <property name="id" value="2"></property>
+        <property name="name" value="Men's Haircut"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+    <bean id="service3" class="ead3.assignment3.Services">
+        <property name="id" value="3"></property>
+        <property name="name" value="Children's Cut"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+    <bean id="service4" class="ead3.assignment3.Services">
+        <property name="id" value="4"></property>
+        <property name="name" value="Manicure"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+    <bean id="service5" class="ead3.assignment3.Services">
+        <property name="id" value="5"></property>
+        <property name="name" value="Pedicure"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+    <bean id="service6" class="ead3.assignment3.Services">
+        <property name="id" value="6"></property>
+        <property name="name" value="Design Art"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+
+    <bean id="product7" class="ead3.assignment3.Products">
+        <property name="id" value="7"></property>
+        <property name="name" value="Shampoo"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+    <bean id="product8" class="ead3.assignment3.Products">
+        <property name="id" value="8"></property>
+        <property name="name" value="Conditioner"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+    <bean id="product9" class="ead3.assignment3.Products">
+        <property name="id" value="9"></property>
+        <property name="name" value="Hair Dye"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+    <bean id="product10" class="ead3.assignment3.Products">
+        <property name="id" value="10"></property>
+        <property name="name" value="Hair Gel"></property>
+        <property name="price" value="10.0"></property>
+    </bean>
+
+    <bean id="sale" class="ead3.assignment3.SalesManagement">
+        <property name="customers">
+            <list>
+            </list>
+        </property>
+        <property name="services">
+            <list>
+                <ref bean="service1"/>
+                <ref bean="service2"/>
+                <ref bean="service3"/>
+                <ref bean="service4"/>
+                <ref bean="service5"/>
+                <ref bean="service6"/>
+            </list>
+        </property>
+        <property name="products">
+            <list>
+                <ref bean="product7"/>
+                <ref bean="product8"/>
+                <ref bean="product9"/>
+                <ref bean="product10"/>
+            </list>
+        </property>
+    </bean>
+</beans>
